@@ -2,56 +2,29 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  NavLink
+  Route
 } from "react-router-dom";
 
-import Home from '../Home';
+import Home from '../Home.js';
+import Navbar from './Nav.js'
 import About from '../About.js';
 import Employment from '../Employment.js';
 import Events from '../Events.js';
 import Involved from '../Involved.js';
 import Programs from '../Programs.js';
 
+import logo from '../../assets/logo.png'
+
 class App extends React.Component {
   render() {
     return (
       <Router>
         <div className="container">
-          <nav id="navbar">
-            <ul className="nav">
-              <li>
-              <NavLink exact activeClassName="active" to="/">
-                Home
-              </NavLink>
-              </li>
-              <li>
-              <NavLink activeClassName="active" to="/about">
-                About
-              </NavLink>
-              </li>
-              <li>
-              <NavLink activeClassName="active" to="/programs">
-                Programs
-              </NavLink>
-              </li>
-              <li>
-              <NavLink activeClassName="active" to="/events">
-                Events
-              </NavLink>
-              </li>
-              <li>
-              <NavLink activeClassName="active" to="/participate">
-                Get Involved
-              </NavLink>
-              </li>
-              <li>
-                <NavLink activeClassName="active" to="/employment">
-                  Employment
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <h1 className="home-header">
+          <img src={logo} />
+            New Horizons in Autism, Inc.
+          </h1>
+          <Navbar />
 
           <Switch>
             <Route exact path="/" component={Home} />
