@@ -6,26 +6,20 @@ import {
 } from "react-router-dom";
 
 import Home from '../Home.js';
-import Navbar from './Nav.js'
+import Navbar from './Navbar.js'
 import About from '../About.js';
 import Employment from '../Employment.js';
 import Events from '../Events.js';
 import Involved from '../Involved.js';
 import Programs from '../Programs.js';
 
-import logo from '../../assets/logo.png'
-
 class App extends React.Component {
   render() {
     return (
-      <Router>
-        <div className="container">
-          <h1 className="home-header">
-          <img src={logo} />
-            New Horizons in Autism, Inc.
-          </h1>
+          <Router>
+        <div className="header-container">
           <Navbar />
-
+        </div>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
@@ -39,7 +33,6 @@ class App extends React.Component {
               }}
             />
           </Switch>
-        </div>
       </Router>
     );
   }
