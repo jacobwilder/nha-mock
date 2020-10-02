@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomCarousel from './Carousel';
+import { Badge } from 'reactstrap';
 
 class Home extends React.Component {
   render() {
@@ -11,21 +12,37 @@ class Home extends React.Component {
           <div class="row text-center">
             <div class="col-lg-4">
               <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <h2 class="banner-heading">Heading</h2>
+              <p class="banner-subtext" style={{fontSize: 14}}>
+                Autism spectrum disorders (ASDs) are a group of developmental disabilities
+                that can cause significant social, communication and behavioral challenges.
+                People with ASDs handle information in their brain differently than other people.
+                ASDs are "spectrum disorders."  That means ASDs affect each person in different ways,
+                and can range from very mild to severe.  People with ASDs share some similar symptoms,
+                such as problems with social interaction.  But there are differences in when the symptoms
+                start, how severe they are, and the exact nature of the symptoms.  
+              </p>
+              <p><a class="btn btn-secondary btn-success" href="https://autismnj.org/" role="button">AutismNJ &raquo;</a></p>
             </div>
             <div class="col-lg-4">
               <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-              <h2>Heading</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <h2 class="banner-heading">Employment <Badge color="success">!</Badge></h2>
+              <p class="banner-subtext">
+                New Horizons in Autism seeks motivated individuals to work or volunteer
+                within community-based programs with people with autism. Intense hands on
+                training provided. Experience is a definite plus. This is a great opportunity
+                to join a team working together on promoting and advocating for individuals
+                who can't do it on their own. This is not a job it is a career. Join us today! 
+              </p>
+              <p><a class="btn btn-secondary btn-success" href="https://nhautism.org/employment" role="button">Apply &raquo;</a></p>
             </div>
             <div class="col-lg-4">
               <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <h2 class="banner-heading">Heading</h2>
+              <p class="banner-subtext">
+                We are always looking for fundraising ideas to help improve our programs and facilities.
+              </p>
+              <p><a class="btn btn-secondary btn-success" href="#" role="button">Apply &raquo;</a></p>
             </div>
           </div>
         </div> 

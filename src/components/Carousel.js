@@ -8,10 +8,11 @@ import {
 } from 'reactstrap';
 
 import Banner from '../assets/autism-banner.jpg';
+import Banner1 from '../assets/now-hiring-landscape-banner.jpg';
 
 const items = [
   {
-    src: Banner,
+    src: Banner1,
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
